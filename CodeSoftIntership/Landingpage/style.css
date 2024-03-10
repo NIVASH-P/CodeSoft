@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+    background-image: url("https://wallpapers.com/images/featured/house-u7pcf18vqolaatio.jpg");
+}
+body{
+    color: #ededed;
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar{
+    background: transparent;
+    
+}
+
+.navbar a{
+    font-size: 10px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+.navbar a:hover,.navbar a:active{
+    color: #00abfe;
+}
+
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 10%;
+}
+
+.home-content{
+    margin-left: 38%;
+    position: absolute;
+    top: 40%;
+    background: transparent;
+    transform: translate(-50%);
+    text-align: center;
+    color: #fff;
+}
+.home-content h1{
+    background: transparent;
+    font-size: 50px;
+}
+.home-content p{
+    background: transparent;
+    /* font-size: 50px; */
+}
+.btn-box {
+    background: transparent;
+}
+
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 35px;
+    border: 2px solid #00abfe;
+    border-radius: 20px;
+    font-size: 15px;
+    color: #00abfe ;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.btn-box a:hover{
+    color:#fff;
+    background: transparent;
+}
+
+.btn-box a
+{
+    background: rgba(5, 47, 176, 0.785);
+    color: #fff;
+}
+.btn-box a:nth-child(2)
+{
+    background: transparent;
+}
+.btn-box a:nth-child(2):hover
+{
+    background: transparent;
+    background: #00abfe;
+    color: #fff;
+}
+.btn-box a:nth-child(2)::before
+{
+    background: rgba(5, 47, 176, 0.785);
+}
+
+.btn-box a::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before{
+    width: 100%;
+}
+
